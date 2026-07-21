@@ -5,29 +5,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Arnold Sowa Photography</title>
+<title>Arnold Sowa</title>
 
 <style>
-
-* {
-    box-sizing: border-box;
-}
 
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
     color: #222;
+    background: #ffffff;
 }
 
-header {
-    height: 100vh;
+.hero {
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: #111;
-    color: white;
 }
 
 h1 {
@@ -37,73 +32,132 @@ h1 {
     margin: 0;
 }
 
-.tagline {
-    font-size: 24px;
+.subtitle {
+    font-size: 26px;
     margin-top: 25px;
-    color: #ccc;
+    color: #666;
 }
 
-nav {
-    position: absolute;
-    top: 30px;
-    width: 100%;
+.intro {
+    max-width: 700px;
+    margin: 35px auto;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 45px;
     text-align: center;
+    transition: .3s;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 16px;
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    font-weight: 400;
     letter-spacing: 2px;
 }
 
-nav a:hover {
-    opacity: .6;
+.card p {
+    color: #666;
+    line-height: 1.5;
 }
 
-.button {
-    margin-top: 45px;
-    padding: 15px 40px;
-    border: 1px solid white;
-    color: white;
-    text-decoration: none;
-    letter-spacing: 2px;
+footer {
+    text-align: center;
+    padding: 50px;
+    color: #777;
 }
 
-.button:hover {
-    background: white;
-    color: black;
+@media(max-width:700px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    .sections {
+        grid-template-columns: 1fr;
+    }
 }
 
 </style>
 
 </head>
 
-
 <body>
 
-<header>
-
-<nav>
-<a href="#">PORTFOLIO</a>
-<a href="#">TRAVEL</a>
-<a href="#">STORIES</a>
-<a href="#">ABOUT</a>
-</nav>
-
+<section class="hero">
 
 <h1>ARNOLD SOWA</h1>
 
-<div class="tagline">
-Photography • Travel • Stories
+<div class="subtitle">
+Economist • Photographer • Traveler
 </div>
 
-<a class="button" href="#">
-ENTER
-</a>
+<div class="intro">
+A collection of professional experiences,
+photographs, travels, and reflections gathered
+through a lifetime of curiosity and exploration.
+</div>
 
-</header>
+</section>
+
+
+<section class="sections">
+
+<div class="card">
+<h2>Professional Journey</h2>
+<p>
+Education, career experiences,
+and lessons learned along the way.
+</p>
+</div>
+
+
+<div class="card">
+<h2>Photography</h2>
+<p>
+Selected photographs, visual stories,
+and projects created with curiosity and exploration.
+</p>
+</div>
+
+
+<div class="card">
+<h2>Travel</h2>
+<p>
+Journeys, destinations, landscapes,
+and stories from around the world.
+</p>
+</div>
+
+
+<div class="card">
+<h2>Writings & Reflections</h2>
+<p>
+Thoughts, observations,
+and ideas collected over time.
+</p>
+</div>
+
+</section>
+
+
+<footer>
+© Arnold Sowa
+</footer>
 
 
 </body>
